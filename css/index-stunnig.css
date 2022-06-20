@@ -1,0 +1,25 @@
+.stunningCarousal {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+}
+.stunningCarousal img{
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    width: 350px;
+    margin: 20px;
+}
+.stCarousel{
+    display: flex;
+}
+.back, .next{
+    border-radius: 50%;
+    height: 20px;
+}
+  
+.back:hover, .next:hover{
+    background-color: rgba(236, 167, 167, 0.8).8);
+}    

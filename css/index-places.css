@@ -1,0 +1,11 @@
+.name_places  {
+    float: left;
+    cursor: pointer; 
+}
+   
+.detalisPlaces {
+    display: none;
+    padding: 6px 12px;
+    position: static;
+}
+

@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guided Tour</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/9a6ec13e7d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9a6ec13e7d.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="header_inner">
-            <img src="/img/logo_site.webp" alt="logo_header">
-            <nav class="nav">
+            <img src="/img/logo_site.webp" alt="logo_header" class="logo_active">
+            <div class="nav" id="myLinks">
                 <a class="nav-link" href="#section_about_us">About us</a>
                 <a class="nav-link" href="#section_itinerary">Itinerary</a>
                 <a class="nav-link" href="#section_testimonials">Testimonials</a>
                 <a class="nav-link" href="#section_contact">Contact</a>
                 <a class="button_inner" href="#section_contact_us">Join Us</a>
-            </nav>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-thin fa-bars"></i>
+            </a>
         </div>
 
     </header> 
@@ -163,14 +166,14 @@
                     <p class="places_text">10 days of travel and 5 unique places in Norway are waiting for us. Read more about each place from our itinerary below.</p>
                 </div>
                 <div class="name_places">
-                    <a class="name_places_" href="#places_oslo">Oslo</a>
-                    <a class="name_places_" href="#places_trondheim">Trondheim</a>
-                    <a class="name_places_" href="#places_bodo">Bodø</a>
-                    <a class="name_places_" href="#places_lofoten">Lofoten Islands</a>
-                    <a class="name_places_" href="#places_tromso">Tromsø </a>
+                    <a class="namePlaces" href="#Oslo" onclick="openCity(event, 'Oslo')">Oslo</a>
+                    <a class="namePlaces" href="#Trondheim'" onclick="openCity(event, 'Trondheim')">Trondheim</a>
+                    <a class="namePlaces" href="#Bodø'" onclick="openCity(event, 'Bodø')">Bodø</a>
+                    <a class="namePlaces" href="#Lofoten Islands" onclick="openCity(event, 'Lofoten Islands')">Lofoten Islands</a>
+                    <a class="namePlaces" href="#Tromsø" onclick="openCity(event, 'Tromsø')">Tromsø</a>
                 </div>
-                <div class="detalis_places" id="places_oslo">
-                    <div class="img_places">
+                <div class="detalisPlaces" id="Oslo">
+                   <div class="img_places">
                         <img src="img/img_oslo.webp" alt="oslo_img">
                     </div>
                     <div class="places_info_">
@@ -192,10 +195,10 @@
                                 <i class="fa-thin fa-plane">   Transfer from the airport</i>
                             </li>
                         </ul>
-                    <a class="button_reg" href="#section_contact_us">Book now</a>
+                        <a class="button_reg" href="#section_contact_us">Book now</a>
+                       </div>
                     </div>
-                </div>
-                <div class="detalis_places" id="places_trondheim">
+                  <div class="detalisPlaces" id="Trondheim">
                     <div class="img_places">
                         <img src="img/img_Trondheim.webp" alt="trondheim_img">
                     </div>
@@ -220,8 +223,8 @@
                         </ul>
                     <a class="button_reg" href="#section_contact_us">Book now</a>
                     </div>
-                </div>
-                <div class="detalis_places" id="places_bodo">
+                  </div>
+                  <div class="detalisPlaces" id="Bodø">
                     <div class="img_places">
                         <img src="img/img_bodo.webp" alt="bodo_img">
                     </div>
@@ -246,8 +249,8 @@
                         </ul>
                     <a class="button_reg" href="#section_contact_us">Book now</a>
                     </div>
-                </div>
-                <div class="detalis_places" id="places_lofoten">
+                  </div>
+                  <div class="detalisPlaces" id="Lofoten Islands">
                     <div class="img_places">
                         <img src="img/img_Lofoten.webp" alt="lofoten_img">
                     </div>
@@ -272,8 +275,8 @@
                         </ul>
                     <a class="button_reg" href="#section_contact_us">Book now</a>
                     </div>
-                </div>
-                <div class="detalis_places" id="places_tromso">
+                  </div>
+                  <div class="detalisPlaces" id="Tromsø">
                     <div class="img_places">
                         <img src="img/img_tromso.webp" alt="tromso_img">
                     </div>
@@ -297,8 +300,8 @@
                             </li>
                         </ul>
                     <a class="button_reg" href="#section_contact_us">Book now</a>
-                    </div>
-                </div>
+                    </div> 
+                  </div> 
             </div>
         </section>
         <section class="stunning_spots" id="section_stunning_spots">
@@ -311,16 +314,12 @@
                     </span>
                    </h2>
                 <p class="places_text">The beauty of Norway can hardly be overestimated. It has literally everything: glaciers, green forests, beaches. Come and see with your own eyes.</p>
-             </div>
-             <div class="stunning_carousal">
-                <img src="img/carousal_1.jpg" alt="">
-                <img src="img/carousal_2.jpg" alt="">
-                <img src="img/carousal_3.jpg" alt="">
-                <img src="img/carousal_4.jpg" alt="">
-                <img src="img/carousal_5.jpg" alt="">
-                <img src="img/carousal_6.jpg" alt="">
-             </div>
-
+            </div>
+            <div class="stunningCarousal">
+                <button class="back">←</button>
+                <div class="stCarousel"></div>
+                <button class="next">→</button>
+            </div>
         </section>
         <section class="faq" id="section_faq">
             <div class="faq_">
@@ -366,35 +365,74 @@
                     <h2 class="testimonials_title">Where do we go?</h2>
                     <p class="testimonials_text">10 days of travel and 5 unique places in Norway are waiting for us. Read more about each place from our itinerary below.</p>
                 </div>
-                <div class="testimonials_carousal">
-                    <div class="testimonials_slide">
-                        <img src="img/carousal_two_1.jpg" alt="">
-                        <h3 class="slide_who">Cole Tiers</h3>
-                        <p class="slide_what">I wanted to see Norway since childhood when I saw a stylish house right in the middle of the Norwegian forest in some magazine. I  thought then that I also want to live in such a house. This dream came true a few months ago on a tour of Norway. I am very happy! Thanks, guys!</p>
-                        <h4 class="slide_when">October 28, 2018</h4>
-                    </div>
-                    <div class="testimonials_slide">
-                        <img src="img/carousal_two_2.jpg" alt="">
-                        <h3 class="slide_who">Lilland Forester</h3>
-                        <p class="slide_what">We went on this tour with our daughter, she was 5 years old. I was worried that it would be difficult for her but everything went great. We spent nights in good hotels with excellent breakfasts. My daughter always had something to eat, and the nature in Norway fascinated her even more than us!</p>
-                        <h4 class="slide_when">May 13, 2019</h4>
-                    </div>
-                    <div class="testimonials_slide">
-                        <img src="img/carousal_two_3.jpg" alt="">
-                        <h3 class="slide_who">May 13, 2019</h3>
-                        <p class="slide_what">I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø, it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the last night, right at midnight, the clouds left, and I saw it! It was magical!</p>
-                        <h4 class="slide_when">January 12, 2020</h4>
-                    </div>
+                <div class="slidesTestimonials">
+                    <button class="bacK">←</button>
+                    <div class="testimonialsSlide"></div>
+                    <button class="nexT">→</button>
                 </div>
             </div>
         </section>
         <section class="contact" id="section_contact">
-
+            <div class="contact_">
+                <div class="contact_element">
+                    <i class="fa-thin fa-at"></i>
+                    <h3 class="contact_name">Write Us</h3>
+                    <p class="element_">norway-tour@email.com</p>
+                </div>
+                <div class="contact_element">
+                    <i class="fa-thin fa-location-dot"></i>
+                    <h3 class="contact_name">Visit Us</h3>
+                    <p class="element_">Tollbugata 15C, 0152 Oslo</p>
+                </div>
+                <div class="contact_element">
+                    <i class="fa-thin fa-mobile"></i>
+                    <h3 class="contact_name">Call Us</h3>
+                    <p class="element_">+1 (234) 567 89 00</p>
+                </div>
+            </div>
         </section>
-
     </main>
     <footer class="footer">
-
+        <div class="footer_">
+              <img class="footer_logo" src="img/logo_site_2webp.webp" alt="Guided">
+              <div class="footer_link">
+                    <a class="futer_link_" href="#section_about_us">About us</a>
+                    <a class="futer_link_" href="#section_itinerary">Itinerary</a>
+                    <a class="futer_link_" href="#section_testimonials">Testimonials</a>
+                    <a class="futer_link_" href="#section_contact">Contact</a>
+              </div>
+              <div class="link_img">
+                <a class="link_icon" href="https://facebook.com">
+                  <i class=" fa-brands fa-facebook"></i></a>
+                <a class="link_icon" href="https://instagram.com">
+                  <i class=" fa-brands fa-instagram"></i></a>
+                <a class="link_icon" href="https://youtube.com">
+                  <i class=" fa-brands fa-youtube"></i></a>
+                </div>
+            <div class="bottom_text">
+              <div class="bottom_text">© Created by</div>
+              <div class="bottomm_text">All rights Reserved</div>
+            </div>
+          </div> 
     </footer>
+    <script>
+        function openCity(evt, cityName) {
+          let i, detalisPlaces, namePlaces;
+          detalisPlaces = document.getElementsByClassName("detalisPlaces");
+          for (i = 0; i < detalisPlaces.length; i++) {
+             detalisPlaces[i].style.display = "none";
+           }
+          namePlaces = document.getElementsByClassName("namePlaces");
+          for (i = 0; i < namePlaces.length; i++) {
+             namePlaces[i].className = namePlaces[i].className.replace(" active", "");
+           }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+    <script src="js/stunnig-spots.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
