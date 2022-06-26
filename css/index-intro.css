@@ -1,0 +1,38 @@
+.intro{
+    background-image: url(../img/background_one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+}
+.video_trip{
+    max-width: 450px;
+}
+.intro_norway{
+    padding-top: 20px;
+}
+.intro_title{
+    font-family: var(--title-font-family);
+    font-size: 70px;
+    color: var(--white-color);
+}
+.intro_what, .intro_when{
+    font-family: var(--main-font-family);
+    color: var(--white-color);
+}
+.intro_what{
+    font-size: 17px;
+}
+.intro_when{
+    font-size: 13px;
+}
+.intro_d{
+    font-family: var(--main-font-family);
+    color: var(--intro-color);
+    font-size: 12px;
+}
+.intro_where{
+    background-color: var(--blue-color);
+    font-family: var(--main-font-family);
+    color: var(--intro-color);
+    font-size: 12px;
+}

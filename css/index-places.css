@@ -1,6 +1,9 @@
-.name_places  {
+.namePlaces  {
     float: left;
     cursor: pointer; 
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--number-background-color);
 }
    
 .detalisPlaces {
@@ -8,4 +11,47 @@
     padding: 6px 12px;
     position: static;
 }
-
+.detalisPlaces img{
+    max-width: 300px;
+}
+.detalisPlaces{
+    display: grid;
+    margin-top: 45px;
+}
+.places_title{
+    font-family: var(--title-font-family);
+    font-size: 22px;
+    color: var(--number-background-color);
+}
+.night{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--red-color);
+}
+.night_where{
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--number-background-color);
+}
+.places_info{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--places-info);
+}
+.highlights_{
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--number-background-color);
+}
+.button_reg{
+    background-color: var(--blue-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--white-color);
+    border-radius: 20px;
+    transition: transform 0.5s;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 60%;
+}

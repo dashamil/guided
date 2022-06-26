@@ -1,0 +1,10 @@
+.digital_value{
+    font-family: var(--main-font-family);
+    font-size: 60px;
+    color: var(--number-background-color);
+}
+.indicator_what{
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--black-color);
+}
