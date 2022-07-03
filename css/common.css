@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@100&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    min-width: 300px;
+    padding: 0 15px;
+    margin: auto;
+}
+:root{
+    --section-t-font-family: 'Roboto', sans-serif;
+    --title-font-family: 'Playfair Display', serif;
+    --main-font-family: 'Roboto', sans-serif;
+
+    --red-color: #EE2E14;
+    --white-color: #FFFFFF;
+    --intro-color: #FFFFFFBF;
+    --section-title: #6F7380;
+    --title-color: #505155;
+    --blue-color: #14A9EE;
+    --number-background-color: #232428;
+    --tour-color: #FFFFFF99;
+    --tour-color-two: #A9A9A9;
+    --black-color: #111111;
+    --places-info: #707070;
+    --form-color: #2D2E34;
+    --testimonials-color: #F7F7F700;
+    --contact-color: #000000A6;
+    --footer-color: #000000; 
+    --footer-text-color: #FFFFFF66;
+
+}
+.line{
+    color: var(--red-color);
+    font-size: 24px;
+}
+.name_section{
+    color: var(--section-title);
+    font-family: var(--section-t-font-family);
+    font-size: 12px;
+    font-weight: 700px;
+}

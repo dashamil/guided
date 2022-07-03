@@ -1,25 +1,48 @@
+.stunning_{
+    background-color: var(--number-background-color);
+    padding-top: 20px;
+}
 .stunningCarousal {
-    min-height: 500px;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    display: grid;
+    max-width: 1000px;
     position: relative;
+    margin: auto;
+    padding: 20px;
 }
 .stunningCarousal img{
     width: 100%;
     margin: auto;
-    height: 400px;
-    width: 350px;
-    margin: 20px;
+    max-width: 280px;
+    margin: 10px;
+    height: 300px;
 }
 .stCarousel{
-    display: flex;
+    display: none;
 }
 .back, .next{
     border-radius: 50%;
-    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -30px;
+    margin-left: 290px;
+    padding: 5px;
+    font-size: 10px;
+    user-select: none;
+    opacity: 0.3;
 }
-  
 .back:hover, .next:hover{
-    background-color: rgba(236, 167, 167, 0.8).8);
-}    
+    background-color: var(--tour-color);
+} 
+.stunning{
+    padding: 15px 15px 15px 20px;
+    max-width: 312px;
+    font-weight: 600;
+}
+.places_text{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--tour-color);
+    padding-top: 15px;
+}   

@@ -1,0 +1,22 @@
+.about_us_{
+    padding-top: 60px;
+    padding-left: 20px ;
+}
+.about_us_title{
+    font-family: var(--title-font-family);
+    font-size: 34px;
+}
+.text_white{
+    color: var(--title-color);
+}
+.text_blue{
+    color: var(--blue-color);
+}
+.about_us_rubric{
+    padding-left: 20px;
+    font-family: var(--main-font-family);
+    color: var(--title-color);
+    font-size: 19px; 
+    font-weight: 500;
+    line-height: 1.5;
+}

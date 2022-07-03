@@ -12,7 +12,7 @@
   function reviveCarousel() {
     const slidesContainer = document.querySelector(".stunningCarousal .stCarousel");
     slidesContainer.innerHTML = slides[actualSlide];
-    if (window.innerWidth >= 600) {
+    if (window.innerWidth >= 650) {
       const secondSlide = actualSlide + 1  >= slides.length ? 0 : actualSlide + 1;
       slidesContainer.innerHTML += slides[secondSlide];
       if (window.innerWidth >= 1000) {

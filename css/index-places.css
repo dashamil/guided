@@ -1,11 +1,83 @@
-.name_places  {
+.places_joint{
+    padding-top: 90px;
+}
+.places_where{
+    font-family: var(--title-font-family);
+    font-size: 34px;
+    color: var(--title-color);
+    font-weight: 600;
+}
+.places_text{
+    font-family: var(--main-font-family);
+    color: var(--title-color) !important;
+    font-size: 19px;
+    font-weight: 400;
+    max-width: 300px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+.namePlaces  {
     float: left;
     cursor: pointer; 
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+    color: var(--number-background-color);
 }
    
 .detalisPlaces {
+    max-width: 300px;
     display: none;
-    padding: 6px 12px;
     position: static;
+    display: grid;
+    margin-top: 45px;
+    padding: 20px 10px 35px 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
 }
-
+.detalisPlaces img{
+    max-width: 300px;
+}
+.places_title{
+    font-family: var(--title-font-family);
+    font-size: 22px;
+    color: var(--number-background-color);
+}
+.night{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--red-color);
+}
+.night_where{
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--number-background-color);
+}
+.places_info{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--places-info);
+}
+.highlights_{
+    margin: 20px;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--number-background-color);
+}
+::marker{
+    color: var(--white-color);
+}
+.button_reg{
+    background-color: var(--blue-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--white-color);
+    border-radius: 20px;
+    transition: transform 0.5s;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 60%;
+}

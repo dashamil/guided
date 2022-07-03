@@ -1,0 +1,28 @@
+.contact_{
+    background-image: url(../img/background_four.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+}
+.contact_element{
+    max-width: 200px;
+    background-color: var(--contact-color);
+    width: 100%;
+    text-align: center;
+    padding: 40px 40px 30px 40px;
+    margin: 30px;
+}
+.contact_element i{
+    color: var(--white-color);
+    font-size: 40px;
+}
+.contact_name{
+    font-family: var(--main-font-family);
+    font-size: 22px;
+    color: var(--white-color);
+}
+.element_{
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    color: var(--white-color);
+}

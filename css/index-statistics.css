@@ -1,0 +1,20 @@
+.statistics_{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.statistics_indicator{
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+.digital_value{
+    font-family: var(--main-font-family);
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--number-background-color);
+}
+.indicator_what{
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    color: var(--black-color);
+}

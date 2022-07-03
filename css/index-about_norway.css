@@ -1,0 +1,18 @@
+._norway{
+    padding: 20px 15px 0 20px;
+}
+._norway img{
+    height: 330px;
+    max-width: 300px;
+    padding-top: 50px;
+}
+._norway_title{
+    font-family: var(--title-font-family);
+    font-size: 34px;
+    color: var(--title-color);
+}
+._norway_text{
+    font-family: var(--main-font-family);
+    font-size: 19px;
+    color: var(--title-color);
+}

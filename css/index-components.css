@@ -1,0 +1,27 @@
+.component img{
+    max-width: 150px;
+}
+.component{
+    padding: 30px 10px 10px 20px;
+    margin: 10px;
+    max-width: 250px;
+    background-color: var(--white-color);
+}
+.components_{
+    background-image: url(../img/background_two.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1065px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.component_{
+    font-family: var(--main-font-family)!important;
+    color: var(--number-background-color)!important;
+    font-size: 22px!important; 
+}
+._component{
+    font-family: var(--main-font-family)!important;
+    color: var(--title-color)!important;
+    font-size: 14px !important; 
+}
