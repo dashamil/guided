@@ -1,13 +1,13 @@
 (function(){
-    const slides = [
-     '<div class="stCarousel"><img src="img/carousal_1.jpg" alt="photo"></div>',
-     '<div class="stCarousel"><img src="img/carousal_2.jpg" alt="photo"></div>',
-     '<div class="stCarousel"><img src="img/carousal_3.jpg" alt="photo"></div>',
-     '<div class="stCarousel"><img src="img/carousal_4.jpg" alt="photo"></div>',
-     '<div class="stCarousel"><img src="img/carousal_5.jpg" alt="photo"></div>',
-     '<div class="stCarousel"><img src="img/carousal_6.jpg" alt="photo"></div>'
-    ];
-    let actualSlide = 0;
+  const slides = [
+   '<div class="stCarousel"><img src="img/carousal_1.jpg" alt="photo"></div>',
+   '<div class="stCarousel"><img src="img/carousal_2.jpg" alt="photo"></div>',
+   '<div class="stCarousel"><img src="img/carousal_3.jpg" alt="photo"></div>',
+   '<div class="stCarousel"><img src="img/carousal_4.jpg" alt="photo"></div>',
+   '<div class="stCarousel"><img src="img/carousal_5.jpg" alt="photo"></div>',
+   '<div class="stCarousel"><img src="img/carousal_6.jpg" alt="photo"></div>'
+  ];
+  let actualSlide = 0;
 
   function reviveCarousel() {
     const slidesContainer = document.querySelector(".stunningCarousal .stCarousel");
@@ -21,20 +21,21 @@
       }
     }
   }
-  function followingSlide() {
-    actualSlide = actualSlide + 1 >= slides.length ? 0 : actualSlide + 1;
-    reviveCarousel();
-  }
-  function prevSlide() {
-    actualSlide = actualSlide - 1 <= 0 ? slides.length -1 : actualSlide - 1;
-    reviveCarousel();
-  }
 
-  const btnNext = document.querySelector(".stunningCarousal .next");
-  btnNext.addEventListener('click', followingSlide);
-  const btnBack = document.querySelector(".stunningCarousal .back");
-  btnBack.addEventListener('click', prevSlide);
-
+ function followingSlide() {
+  actualSlide = actualSlide + 1 >= slides.length ? 0 : actualSlide + 1;
   reviveCarousel();
-  window.addEventListener("resize", reviveCarousel);
+ }
+ function prevSlide() {
+  actualSlide = actualSlide - 1 <= 0 ? slides.length -1 : actualSlide - 1;
+  reviveCarousel();
+ } 
+
+ const btnNext = document.querySelector(".stunningCarousal .next");
+ btnNext.addEventListener('click', followingSlide);
+ const btnBack = document.querySelector(".stunningCarousal .back");
+ btnBack.addEventListener('click', prevSlide);
+
+ reviveCarousel();
+ window.addEventListener("resize", reviveCarousel);
 })()

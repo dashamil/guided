@@ -36,10 +36,10 @@
 .faq__collapsible, .active {
     background: var(--intro-color);
     content: "-";
-  }
+}
 .faq__collapsible,.active::after {
     content: "-";
-  }
+}
 .faq__collapsible::after {
     content: "+";
     display: flex;

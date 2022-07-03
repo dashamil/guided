@@ -31,6 +31,7 @@
     font-size: 17px;
     text-align: center;
     display: block;
+    background-color: var(--intro-color)!important;
 }
 .button_inner{
     background-color: var(--blue-color);

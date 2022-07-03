@@ -1,0 +1,19 @@
+.component img{
+    width: 100px;
+}
+.components_{
+    background-image: url(../img/background_two.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+}
+.component_{
+    font-family: var(--main-font-family);
+    color: var(--number-background-color);
+    font-size: 22px; 
+}
+._component{
+    font-family: var(--main-font-family);
+    color: var(--title-color);
+    font-size: 14px; 
+}
