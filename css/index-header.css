@@ -9,7 +9,6 @@
   
 .header_inner {
     background-color: var(--section-title) ;
-    bottom: -20px;
 }
 .header_inner img{
     max-width: 180px;
@@ -43,7 +42,7 @@
     border: none;
     transition: inherit;
     transition: transform 0.5s;
-    margin-left: 170px;
+    margin-left: 130px;
 }
 .icon_h {
     color: var(--blue-color);
@@ -55,5 +54,14 @@
 }
 .header_inner a:hover {
     color: var(--black-color);
+}
+@media (max-width:768px){
+    .icon_h{
+        right: 30px;
+    }
+    .button_inner{
+        margin-left: 330px;
+    }
+
 }
   

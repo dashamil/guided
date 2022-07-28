@@ -15,7 +15,7 @@
     if (window.innerWidth >= 650) {
       const secondSlide = actualSlide + 1  >= slides.length ? 0 : actualSlide + 1;
       slidesContainer.innerHTML += slides[secondSlide];
-      if (window.innerWidth >= 1000) {
+      if (window.innerWidth >= 999) {
         const nextSlide = secondSlide + 1 >= slides.length ? 0 : secondSlide + 1;
         slidesContainer.innerHTML += slides[nextSlide];
       }

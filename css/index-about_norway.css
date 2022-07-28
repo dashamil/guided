@@ -16,3 +16,36 @@
     font-size: 19px;
     color: var(--title-color);
 }
+@media (max-width: 768px){
+    ._norway{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    ._norway img{
+        max-width: 214px;
+        height: 232px;
+        padding-top: 90px;
+    }
+    ._norway_first, ._norway_rest_text{
+        max-width: 164px;
+        padding-top: 90px;
+    }
+}
+@media (max-width: 1280px){
+    ._norway{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    ._norway img{
+        max-width: 314px;
+        height: 332px;
+        padding-top: 50px;
+    }
+    ._norway_first, ._norway_rest_text{
+        max-width: 264px;
+        padding-top: 50px;
+    }
+    ._norway{
+        padding: 20px 10px 0 10px;
+    }
+}

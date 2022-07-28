@@ -5,7 +5,6 @@
     padding-top: 20px;
     text-align: center;
 }
-
 .testimonials_title{
     font-family: var(--title-font-family);
     font-size: 34px;
@@ -68,3 +67,33 @@
 .stCarousel{
     display: grid;
 }
+@media (max-width: 768px){
+    .slidesTestimonials{
+        max-width: 600px;
+    }
+    .testimonials_{
+        height: 600px;
+    }
+    .testimonials_text{
+        max-width: 500px;
+    }
+    .testimonials_info{
+        display: grid;
+        justify-content: center;
+    }
+}    
+@media (max-width: 1280px){
+    .slidesTestimonials{
+        max-width: 1000px;
+    }
+    .testimonials_{
+        height: 800px;
+    }
+    .testimonials_text{
+        max-width: 900px;
+    }
+    .testimonials_info{
+        display: grid;
+        justify-content: center;
+    }
+} 

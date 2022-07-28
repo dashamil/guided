@@ -1,5 +1,7 @@
 .places_joint{
     padding-top: 90px;
+    display: grid;
+    justify-items: center;
 }
 .places_where{
     font-family: var(--title-font-family);
@@ -26,10 +28,9 @@
     color: var(--number-background-color);
 }
 .detalisPlaces {
-    max-width: 300px;
-    display: none;
-    position: static;
+    width: 300px;
     display: grid;
+    position: static;
     margin-top: 45px;
     padding: 20px 10px 35px 20px;
     font-weight: 600;
@@ -78,5 +79,59 @@
     align-items: center;
     outline: none;
     border: none;
-    width: 60%;
+    padding: 10px;
+}
+@media (max-width: 768px){
+    .places_joint{
+        max-width: 760px;
+        display: grid;
+        justify-items: center;
+    }
+    .places_text{
+        max-width: 600px;
+    }  
+    .namePlaces  {
+        font-size: 17px;
+    }      
+    .detalisPlaces{
+        max-width: 700px;
+        display: flex !important;
+        justify-content: space-evenly;
+    }
+    .img_places img{
+        max-width: 220px;
+        height: 380px;
+        padding: 10px;
+    }
+    .places_info_{
+        max-width: 280px;
+        padding: 10px;
+    }
+}
+@media (max-width: 1280px){
+    .places_joint{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .places_text{
+        max-width: 1000px;
+    }  
+    .namePlaces  {
+        font-size: 17px;
+    }      
+    .detalisPlaces{
+        width: 1000px;
+        display: flex !important;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    .img_places img{
+        max-width: 436px;
+        height: 899px;
+        padding: 10px;
+    }
+    .places_info_{
+        width: 400px;
+    } 
 }

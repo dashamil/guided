@@ -8,10 +8,9 @@
     color: var(--footer-color)!important;
 }
 .video_trip{
-    min-width: 300px;
+    max-width: 300px;
     height: 300px;
     padding-top: 20px;
-    
 }
 .short_info{
     text-align: justify;
@@ -58,4 +57,53 @@
     border: none;
     width: 50%;
     padding: 5px;
+}
+@media (max-width:768px){
+    .intro{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intro_norway{
+        align-items: flex-start;
+    }
+    .short_info{
+        margin-top: 300px;
+        flex-shrink: 1; 
+    }
+    .intro_title{
+        font-size: 100px;
+    }
+    .video_trip{
+        max-width: 250px;
+        height: 200px;
+    }
+    .intro_d, .intro_where{
+        font-size: 15px; 
+    }
+    .intro_where{
+        padding: 10px;
+    }
+    .intro_what{
+        font-size: 21px;
+    }
+    .intro_when{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1280px){
+    .intro{
+        display: flex !important;
+        justify-content: space-between;
+        height: 800px;
+    }
+    .intro_norway{
+        padding-top: 20px;
+    }
+    .short_info{
+        padding-top: 220px;
+        padding-right: 60px;
+    }
+    .intro_title{
+        font-size: 100px;
+    }
 }

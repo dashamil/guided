@@ -1,6 +1,6 @@
 .statistics_{
+    display: grid;
     padding-top: 20px;
-    padding-left: 20px;
 }
 .statistics_indicator{
     font-weight: 700;
@@ -17,4 +17,24 @@
     font-family: var(--main-font-family);
     font-size: 14px;
     color: var(--black-color);
+}
+@media (max-width: 768px){
+    .statistics_{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .statistics_indicator{
+        max-width: 367px;
+        height: 126px;
+        padding: 0 32px;
+        margin: 30px;
+    }
+}
+@media (max-width: 1280px){
+    .statistics_{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
