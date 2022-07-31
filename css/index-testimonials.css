@@ -67,22 +67,22 @@
 .stCarousel{
     display: grid;
 }
-@media (max-width: 768px){
-    .slidesTestimonials{
+@media (min-width: 768px){
+    /*.slidesTestimonials{
         max-width: 600px;
-    }
+    }*/
     .testimonials_{
         height: 600px;
     }
-    .testimonials_text{
+    /*.testimonials_text{
         max-width: 500px;
-    }
+    }*/
     .testimonials_info{
         display: grid;
         justify-content: center;
     }
 }    
-@media (max-width: 1280px){
+/*@media (max-width: 1280px){
     .slidesTestimonials{
         max-width: 1000px;
     }

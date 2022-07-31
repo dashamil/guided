@@ -43,24 +43,24 @@
     color: var(--tour-color);
     padding-top: 15px;
 }   
-@media (max-width: 768px){
+@media (min-width: 768px){
     .stunning_{
     justify-items:stretch;
     padding-left: 20px;
     }
-    .stunning{
+    /*.stunning{
         max-width: 600px;
-    }
+    }*/
     .stunningCarousal{
         display: flex;
-        max-width: 750px;
+        /*max-width: 750px;*/
     }
     .stCarousel{
         display: flex !important;
-        max-width: 700px;
+       /* max-width: 700px;*/
     }
 } 
-@media (max-width: 1280px){
+/*@media (max-width: 1280px){
     .stunning_{
         justify-items:stretch;
     }

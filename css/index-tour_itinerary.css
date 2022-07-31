@@ -40,7 +40,7 @@
     font-size: 14px;
     color: var(--tour-color-two);
 }
-@media (max-width: 768px){
+@media (min-width: 768px){
     .tour_itinerary_{
         display: flex;
         justify-content: space-evenly;
@@ -59,7 +59,7 @@
         margin-top: 15px;
     }
 }
-@media (max-width: 1280px){
+/*@media (max-width: 1280px){
     .tour_itinerary_{
         display: flex;
         justify-content: space-between;

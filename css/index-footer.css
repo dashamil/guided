@@ -38,7 +38,7 @@
     padding: 10px;
     color: var(--white-color);
 }
-@media (max-width: 1280px){
+@media (min-width: 768px){
     .footer_{
         height: 300px;
         display: flex;

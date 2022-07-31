@@ -81,7 +81,7 @@
     border: none;
     padding: 10px;
 }
-@media (max-width: 768px){
+@media (min-width: 768px){
     .places_joint{
         max-width: 760px;
         display: grid;
@@ -108,7 +108,7 @@
         padding: 10px;
     }
 }
-@media (max-width: 1280px){
+/*@media (max-width: 1280px){
     .places_joint{
       display: flex;
       flex-wrap: wrap;

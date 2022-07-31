@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 1050px;
+    
 }
 .name_section{
     color: var(--footer-color)!important;
@@ -58,10 +59,10 @@
     width: 50%;
     padding: 5px;
 }
-@media (max-width:768px){
+@media (min-width:768px){
     .intro{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .intro_norway{
         align-items: flex-start;
@@ -90,7 +91,7 @@
         font-size: 18px;
     }
 }
-@media (max-width: 1280px){
+/*@media (max-width: 1280px){
     .intro{
         display: flex !important;
         justify-content: space-between;
