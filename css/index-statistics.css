@@ -22,7 +22,8 @@
     .statistics_{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
     }
     .statistics_indicator{
         max-width: 367px;
@@ -31,7 +32,7 @@
         margin: 30px;
     }
 }
-/*@media (max-width: 1280px){
+@media (min-width: 1280px){
     .statistics_{
         display: flex;
         flex-wrap: wrap;

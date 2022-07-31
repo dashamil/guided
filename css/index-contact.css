@@ -10,6 +10,7 @@
     max-width: 200px;
     background-color: var(--contact-color);
     width: 100%;
+    height: 200px;
     text-align: center;
     padding: 40px 40px 30px 40px;
     margin: 30px;
@@ -40,12 +41,12 @@
         padding: 50px 15px 30px 10px;
     }
 }
-/*@media (max-width: 1280px){
+@media (min-width: 1280px){
     .contact_{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        height: 380px;
+        height: 465px;
     }
     .contact_element{
         max-width: 250px;

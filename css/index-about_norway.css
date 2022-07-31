@@ -19,7 +19,7 @@
 @media (min-width: 768px){
     ._norway{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     ._norway img{
         max-width: 214px;
@@ -31,10 +31,10 @@
         padding-top: 90px;
     }
 }
-/*@media (max-width: 1280px){
+@media (min-width: 1280px){
     ._norway{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     ._norway img{
         max-width: 314px;

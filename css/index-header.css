@@ -42,7 +42,11 @@
     border: none;
     transition: inherit;
     transition: transform 0.5s;
-    margin-left: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
 }
 .icon_h {
     color: var(--blue-color);
@@ -59,13 +63,9 @@
     .icon_h{
         right: 30px;
     }
-    .button_inner{
-        margin-left: 330px;
-    }
+  
 }
 @media (max-width: 1280px){
-    .button_inner{
-        margin-left: 560px;
-    }
+   
 }
   

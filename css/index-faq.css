@@ -70,6 +70,7 @@
 @media (min-width: 768px){
     .faq_{
         display: flex;
+        justify-content: space-between;
         height: 850px;
         padding: 30px;
     }
@@ -77,10 +78,14 @@
         max-width: 335px;
     }
     .faq_img{
-        padding-left: 25px;
+        padding-top: 40px;
+    }
+    .faq_img img{
+        max-width: 280px;
+        height: 380px;
     }
 }
-/*@media (max-width: 1280px){
+@media (min-width: 1280px){
     .faq_{
         display: flex;
         justify-content: space-around;

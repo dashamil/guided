@@ -4,11 +4,10 @@
     background-position: center;
     height: 1080px;
     padding-top: 120px;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 .contacts_form {
-    display: grid;
     background-color: var(--number-background-color);
     padding: 20px;
     margin: 0;
@@ -73,21 +72,17 @@
     background-color: #4f504df3;
     color: var(--intro-color);
 }
-@media (mix-width: 768px){
+ @media (min-width: 768px) {
     .contact_us_{
-        display: grid;
-        justify-items: start;
-        padding-left: 30px;
-    }
-}    
-/*@media (max-width: 1280px){
-    .contact_us_{
-        display: grid;
-        justify-items: start;
         padding-left: 30px;
     }
     .contacts_form{
         max-width: 500px;
+    }
+ } 
+@media (min-width: 1280px){
+    .form_input, .form_input_date, .form_input_submit{
+        height: 50px;;
     }
 
 } 

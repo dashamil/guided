@@ -28,7 +28,6 @@
     color: var(--number-background-color);
 }
 .detalisPlaces {
-    width: 300px;
     display: grid;
     position: static;
     margin-top: 45px;
@@ -84,8 +83,9 @@
 @media (min-width: 768px){
     .places_joint{
         max-width: 760px;
-        display: grid;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .places_text{
         max-width: 600px;
@@ -95,8 +95,8 @@
     }      
     .detalisPlaces{
         max-width: 700px;
-        display: flex !important;
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-around;
     }
     .img_places img{
         max-width: 220px;
@@ -108,7 +108,7 @@
         padding: 10px;
     }
 }
-/*@media (max-width: 1280px){
+@media (min-width: 1280px){
     .places_joint{
       display: flex;
       flex-wrap: wrap;
@@ -121,9 +121,9 @@
         font-size: 17px;
     }      
     .detalisPlaces{
-        width: 1000px;
-        display: flex !important;
-        justify-content: space-between;
+        min-width: 1200px;
+        display: flex;
+        justify-content: space-around;
         text-align: justify;
     }
     .img_places img{
