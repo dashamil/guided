@@ -13,20 +13,18 @@
     justify-self: center;
     align-self: center;
 }
-.footer_link{
+
+.futer_link_{
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
     font-family: var(--main-font-family);
     font-size: 17px;
     color: var(--white-color)!important;
     display: grid;
     justify-self: center;
     align-self: center;
-    padding: 15px;
-}
-.futer_link_{
-    max-width: 100px;
-    width: 100%;
-    text-align: center;
-    padding: 20px 20px 10px 20px;
 }
 .bottom_text{
     font-family: var(--main-font-family);
@@ -47,5 +45,6 @@
     }
     .footer_link{
         display: flex;
+        justify-content: center;
     }
 }

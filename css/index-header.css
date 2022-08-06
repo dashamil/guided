@@ -8,7 +8,8 @@
 }
   
 .header_inner {
-    background-color: var(--section-title) ;
+    background-color: var(--section-title);
+    height: 40px;
 }
 .header_inner img{
     max-width: 180px;

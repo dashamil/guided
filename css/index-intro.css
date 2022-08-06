@@ -15,7 +15,7 @@
 }
 .short_info{
     text-align: justify;
-    max-width: 250px;
+    min-width: 250px;
     padding: 20px;
     font-weight: 700;
 }
@@ -74,10 +74,7 @@
     .intro_title{
         font-size: 100px;
     }
-    .video_trip{
-        min-width: 250px;
-        height: 200px;
-    }
+    
     .intro_d, .intro_where{
         font-size: 15px; 
     }
@@ -95,15 +92,17 @@
     .intro{
         display: flex;
         justify-content: space-around;
-        height: 800px;
+        height: 890px;
     }
     .intro_title{
-        font-size: 100px !important;
+        font-size: 100px;
     }
     .intro_norway{
         padding-top: 20px;
+        width: 460px;
     }
     .video_trip{
         padding-top: 0;
+        width: 380px;
     }
 }

@@ -3,7 +3,6 @@
     padding-top: 20px;
 }
 .statistics_indicator{
-    font-weight: 700;
     text-align: center;
     padding: 10px;
 }
@@ -17,6 +16,7 @@
     font-family: var(--main-font-family);
     font-size: 14px;
     color: var(--black-color);
+    font-weight: 700;
 }
 @media (min-width: 768px){
     .statistics_{
