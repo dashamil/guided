@@ -1,24 +1,20 @@
 .stunning_{
     background-color: var(--number-background-color);
     padding-top: 20px;
-    display: grid;
-    justify-items: center;
+   /* display: grid;
+    justify-items: center;*/
 }
 .stunningCarousal {
-    display: grid;
-    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
     margin: auto;
     padding: 20px;
 }
-.stunningCarousal img{
-    width: 100%;
-    margin: auto;
-    max-width: 280px;
+.stCarousel img{
+    width: 280px;
     margin: 10px;
     height: 300px;
-}
-.stCarousel{
-    display: none;
 }
 .back, .next{
     border-radius: 50%;
@@ -41,7 +37,7 @@
     font-size: 17px;
     color: var(--tour-color);
     padding-top: 15px;
-}   
+}  
 @media (min-width: 768px){
     .stunning_{
     justify-items:stretch;
@@ -58,6 +54,7 @@
         display: flex !important;
        /* max-width: 700px;*/
     }
+    
 } 
 @media (max-width: 1280px){
     .stunningCarousal{

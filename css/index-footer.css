@@ -15,16 +15,14 @@
 }
 
 .futer_link_{
-    max-width: 100px;
-    width: 100%;
+    width: 400px;
     text-align: center;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 0 10px 0;
     font-family: var(--main-font-family);
     font-size: 17px;
     color: var(--white-color)!important;
-    display: grid;
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 .bottom_text{
     font-family: var(--main-font-family);
