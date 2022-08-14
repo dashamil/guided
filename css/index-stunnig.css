@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 .stCarousel img{
     width: 280px;
@@ -21,7 +21,6 @@
     cursor: pointer;
     height: 30px;
     width: auto;
-    padding: 5px;
     font-size: 10px;
     opacity: 0.3;
 }

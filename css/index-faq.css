@@ -1,5 +1,5 @@
 .faq_{
-    min-height: 980px;
+    height: 950px;
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -29,7 +29,6 @@
     margin: auto;
     padding: 15px;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
 }
 .active, .faq__collapsible:hover {
   background-color: var(--intro-color);
@@ -89,7 +88,7 @@
     .faq_{
         display: flex;
         justify-content: space-around;
-        height: 800px;
+        height: 720px;
         padding: 30px;
     }
     .faq_info{
